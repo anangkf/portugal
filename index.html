@@ -144,16 +144,44 @@
     </div>
   </div>
 
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light"></h5>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="assets/img/training1.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <i class="material-icons">format_quote</i>
+          <h5 class="light grey-text text-lighten-3">Terkadang kita diuji bukan untuk menunjukkan kelemahan kita, tetapi untuk menemukan kekuatan kita."</h5>
         </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="assets/img/training1.jpg" alt="Unsplashed background img 3"></div>
+      </li>
+      <li>
+        <img src="assets/img/training1.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <i class="material-icons">format_quote</i>
+          <h5 class="light grey-text text-lighten-3">Semakin keras kamu bekerja untuk sesuatu, semakin besar perasaanmu saat mencapainya."</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/img/training1.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <i class="material-icons">format_quote</i>
+          <h5 class="light grey-text text-lighten-3">Jangan takut berjalan lambat, takutlah jika hanya berdiri diam."</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/img/training1.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <i class="material-icons">format_quote</i>
+          <h5 class="light grey-text text-lighten-3">Apabila sesuatu yang kau senangi tidak terjadi maka senangilah apa yang terjadi." – Ali bin Abi Thalib</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/img/training1.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <i class="material-icons">format_quote</i>
+          <h5 class="light grey-text text-lighten-3">Kesuksesan dan kegagalan sama-sama bagian dari hidup. Keduanya sama-sama sementara.” - Shahrukh Khan</h5>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <footer class="page-footer red darken-2">
@@ -161,7 +189,7 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">About PORTUGAL.</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <p class="grey-text text-lighten-4">Sebuah Portal Online yang digunakan untuk menampung source code tugas pada mata kuliah Web Programming. Portal ini sekaligus sebagai penampil hasil coding kita.</p>
 
 
         </div>
@@ -199,8 +227,17 @@
   <script src="materialize/js/init.js"></script>
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
   <script>
-    M.AutoInit();
+    M.AutoInit(); 
   </script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems,{
+      indicators: false,
+      interval: 7000
+    });
+    });
+  </script>
   </body>
 </html>
