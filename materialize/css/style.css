@@ -58,7 +58,7 @@ footer.page-footer {
 
 @font-face {
   font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Regular.ttf');
+  src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
 body {
