@@ -55,13 +55,3 @@ p {
 footer.page-footer {
   margin: 0;
 }
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Regular.ttf');
-  src: url(assets/fonts/Poppins-Regular.ttf);
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-}
