@@ -6,6 +6,15 @@
  * Made By MaterializeCSS.com
  */
 
+@font-face{
+  font-family: 'Poppins';
+  src:url(../../assets/fonts/Poppins-Regular.woff2)
+}
+
+body{
+  font-family: 'Poppins';
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
