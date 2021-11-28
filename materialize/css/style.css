@@ -24,6 +24,18 @@ p {
   line-height: 2rem;
 }
 
+@media only screen and (min-width: 300px) {
+table, td {
+  font-size: 0.75rem;
+}
+}
+
+@media only screen and (min-width: 992px) {
+  table, td {
+    font-size: 1rem;
+  }
+  }
+
 .sidenav-trigger {
   color: #26a69a;
 }
