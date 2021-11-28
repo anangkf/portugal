@@ -1,24 +1,30 @@
 // script untuk penomoran tabel secara otomatis
 const angka = document.getElementsByClassName('nomor')
-var arr = Array.from(angka);
+const arr = Array.from(angka);
 		
 arr.forEach((angka,i) => angka.innerText = i+1)
 
 // script untuk menampilkan predikat berdasarkan range nilai
-var nilai = document.getElementsByClassName("nilai");
-var predikat = document.getElementsByClassName("predikat");
+let nilai = document.getElementsByClassName("nilai");
+let predikat = document.getElementsByClassName("predikat");
+let keterangan = document.getElementsByClassName("keterangan");
 			
     for (let i = 0; i < nilai.length ; i++) {
         let valueNilai = parseInt(nilai[i].innerText)
         if(valueNilai >= 85){
-            predikat[i].innerText = "Sangat Baik";
+            predikat[i].innerText = "A";
+            keterangan[i].innerText = "Sangat Baik";
         } else if(valueNilai >= 75){
-            predikat[i].innerText = "Baik";
+            predikat[i].innerText = "B";
+            keterangan[i].innerText = "Baik";
         } else if(valueNilai >= 65){
-            predikat[i].innerText = "Cukup";
+            predikat[i].innerText = "C";
+            keterangan[i].innerText = "Cukup";
         } else if(valueNilai >= 55){
-            predikat[i].innerText = "Kurang";
+            predikat[i].innerText = "D";
+            keterangan[i].innerText = "Kurang";
         } else{
-            predikat[i].innerText = "Mengulang";
+            predikat[i].innerText = "E";
+            keterangan[i].innerText = "Mengulang";
         }
     }
