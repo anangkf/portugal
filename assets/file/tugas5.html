@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	table, th, td{
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	td {
+		width: 20vh;
+		height: 2vh;
+	}
+
+</style>
+<body>
+	<table>
+              <thead>
+                <td>No.</td>
+                <td>Nama</td>
+                <td>NIM</td>
+                <td>Nilai</td>
+                <td>Predikat</td>
+              </thead>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Ayu Susanti</td>
+                <td>18292456</td>
+                <td class = "nilai">78</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Bagya Prasetyo</td>
+                <td>18292471</td>
+                <td class = "nilai">66</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Cakrawangsa Prayoga</td>
+                <td>18292454</td>
+                <td class = "nilai">89</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Citra Anggraini</td>
+                <td>18292470</td>
+                <td class = "nilai">75</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Danang Mustofa</td>
+                <td>18292463</td>
+                <td class = "nilai">64</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Drajat Simanjuntak</td>
+                <td>18292460</td>
+                <td class = "nilai">71</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Edi Setiawan</td>
+                <td>18292468</td>
+                <td class = "nilai">51</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Eka Maheswara</td>
+                <td>18292465</td>
+                <td class = "nilai">69</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Eka Wijayanti</td>
+                <td>18292462</td>
+                <td class = "nilai">79</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Faizah Uyainah</td>
+                <td>18292458</td>
+                <td class = "nilai">83</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Hendra Budiyanto</td>
+                <td>18292455</td>
+                <td class = "nilai">87</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Hilda Yulianti</td>
+                <td>18292469</td>
+                <td class = "nilai">73</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Himawan Natsir</td>
+                <td>18292472</td>
+                <td class = "nilai">62</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Icha Halimah</td>
+                <td>18292466</td>
+                <td class = "nilai">75</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Karimah Maryati</td>
+                <td>18292453</td>
+                <td class = "nilai">50</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Muhammad Wibisono</td>
+                <td>18292457</td>
+                <td class = "nilai">73</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Mulyono Irawan</td>
+                <td>18292461</td>
+                <td class = "nilai">81</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Rizki Kurniawan</td>
+                <td>18292464</td>
+                <td class = "nilai">77</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Tania Anggraini</td>
+                <td>18292459</td>
+                <td class = "nilai">80</td>
+                <td class = "predikat"></td>
+              </tr>
+              <tr>
+                <td class = "nomor"></td>
+                <td>Titin Wijayanti</td>
+                <td>18292467</td>
+                <td class = "nilai">76</td>
+                <td class = "predikat"></td>
+              </tr>
+    </table>
+</body>
+
+	<script>
+		//penomoran otomatis
+		var angka = document.getElementsByClassName("nomor");
+		var arr = Array.from(angka);
+			
+		arr.forEach((angka,i) => angka.innerText = i+1);
+		
+		//predikat nilai
+		var nilai = document.getElementsByClassName("nilai");
+		var predikat = document.getElementsByClassName("predikat");
+			
+		for (let i = 0; i < nilai.length ; i++) {
+			let valueNilai = parseInt(nilai[i].innerText)
+			if(valueNilai >= 85){
+				predikat[i].innerText = "Sangat Baik";
+			} else if(valueNilai >= 75){
+				predikat[i].innerText = "Baik";
+			} else if(valueNilai >= 65){
+				predikat[i].innerText = "Cukup";
+			} else if(valueNilai >= 55){
+				predikat[i].innerText = "Kurang";
+			} else{
+				predikat[i].innerText = "Mengulang";
+			}
+		}
+		
+	</script>
+
+</html>
